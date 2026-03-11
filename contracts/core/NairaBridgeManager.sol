@@ -6,10 +6,10 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
 
-import "./DepositLib.sol";
-import "./WithdrawalLib.sol";
-import "./TokenLib.sol";
-import "./ConfigLib.sol";
+import "../libraries/DepositLib.sol";
+import "../libraries/WithdrawalLib.sol";
+import "../libraries/TokenLib.sol";
+import "../libraries/ConfigLib.sol";
 
 /// @title  NairaBridgeManager
 /// @notice Thin orchestrator. All business logic lives in the four libraries.
