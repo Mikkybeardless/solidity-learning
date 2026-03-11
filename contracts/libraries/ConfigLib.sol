@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
-import "./BridgeErrors.sol";
+import "../interfaces/BridgeErrors.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /// @title  ConfigLib
@@ -16,8 +16,6 @@ library ConfigLib {
         address treasury;
         uint256 maxWithdrawalPerTx;
     }
-
-    // LOGIC
 
     /// @notice Update the treasury address.
     function setTreasury(ConfigStorage storage self, address _newTreasury) internal {
